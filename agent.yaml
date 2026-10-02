@@ -1,0 +1,30 @@
+spec_version: "0.1.0"
+name: jira-sprint-velocity-agent
+version: 1.0.0
+description: Agile sprint velocity forecasting, mid-sprint scope creep detection, and issue dependency bottleneck identification.
+author: "Rucha Salpure"
+license: MIT
+model:
+  preferred: claude-opus-4-6
+  fallback:
+    - claude-sonnet-4-5-20250929
+  constraints:
+    temperature: 0.2
+    max_tokens: 4096
+skills:
+  - story-point-estimation-bias
+tools: []
+delegation:
+  mode: auto
+runtime:
+  max_turns: 50
+  timeout: 300
+compliance:
+  risk_tier: standard
+  frameworks: []
+tags:
+  - productivity
+  - autonomous-agent
+  - opengap-verified
+metadata:
+  repository: "https://github.com/Rucha0901/jira-sprint-velocity-agent"
